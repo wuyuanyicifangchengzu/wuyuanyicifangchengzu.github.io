@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <script src="https://use.typekit.net/hfy0vzj.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <title>游山玩水记</title>
+    <link rel="stylesheet" type="text/css" href="static/inputcss/normalize.css">
+    <link rel="stylesheet" type="text/css" href="static/inputcss/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="static/inputcss/demo.css">
+    <link rel="stylesheet" href="/tatic/materialize.min.css" type="text/css">
+    <!--必要样式-->
+    <link rel="stylesheet" type="text/css" href="static/inputcss/component.css">
+    <!--[if IE]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <style>
+	 html,body{
+            font-family: 'Noto Serif CJK SC', 'Noto Serif CJK', 'Source Han Serif SC', 'Source Han Serif', 'source-han-serif-sc', serif;
+        }
+        span{
+            display: block;
+        }
+		.a2{
+            border: 1px solid gold;
+            height: 500px;
+        }
+        .a3{
+            height:100%;
+
+        }
+        .a1{
+            display: block;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body class=" bgcolor-3">
+
+	<div class="row container">
+
+<section class="content">
+	<h1>游山玩水记</h1>
+				      <div class="row">
+        <div class="col s12 m8 push-m2 push-s0">
+          <div class="card">
+            <div class="card-image">
+              <img src="static/img/ml2.png">
+              <!-- <span class="card-title">Card Title</span> -->
+            </div>
+          </div>
+        </div>
+	</div>
+
+<div class="divider"></div>
+<h3>世界公园篇</h3>
+   <div class="row">
+        <div class="col s12 m8 push-m2 push-s0">
+          <div class="card">
+            <div class="card-image">
+              <img src="static/img/play1.jpg">
+              <!-- <span class="card-title">Card Title</span> -->
+            </div>
+            <div class="card-content">
+              <p>尽管我们道具匮乏，但正是这些不利因素展现了我们的良好信念感，我们用诚意满满的模仿向这些雕塑致敬：</p>
+            </div>
+          </div>
+        </div>
+		</div>
+        <h5>经过一上午的游览，我们在这小小的方寸之地见到了全世界多种多样的建筑风格，<br>它们或典雅，或华贵，极富地方特色。<br>我们不仅认出了一些仿造建筑，还了解到了许多世界知名的建筑的文化背景。<br>在这个过程中，我们放松了身心，也增长了某些方面的知识，<br>不可谓这不是一次成功的外出团建！</h5>
+    <div class="divider"></div>
+    <h3>阿凡达篇</h3>
+    <div class="row">
+        <div class="col s12 m8 push-m2 push-s0">
+            <div class="card">
+                <div class="card-image">
+                    <img src="static/img/play2.jpg">
+                    <!-- <span class="card-title">Card Title</span> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s12 m8 push-m2 push-s0">
+            <div class="card">
+                <div class="card-image">
+                    <img src="static/img/play3.jpg">
+                    <!-- <span class="card-title">Card Title</span> -->
+                </div>
+                <div class="card-content">
+                    <p>重温经典《阿凡达》，张茜茹学姐带领五元一次方程组同学前往乐多港万达广场举办了此次电影密室游玩活动。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="divider"></div>
+    <h5>《阿凡达》是一部特别经典的作品。<br>160多分钟，极佳的3D效果体验，内容充实而不乏味。<br>潘多拉星球上那成片的森林、曼舞的精灵、热爱着敬畏着自然的纳威人，都让人十分的动容。<br>但是，人类的贪婪与欲望，却是在电影中展露无遗。<br>或许，当有一天，地球真的被我们破坏到无法生存，当我们妄图占有其它星球来生存时，<br>我们所有人类，都将成为电影中的人，迫害潘多拉星的那群人。<br>毋庸置疑，到那个时候，杰克，将会是我们所有人摈弃的叛徒，<br>这很可悲，但很现实。</h5>
+
+</section>
+</form>
+</div>
+</body>
+<script type="text/javascript" src="static/inputcss/Text Input Effects_files/classie.js"></script>
+<script type="text/javascript">
+    (function() {
+        // trim polyfill : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/
+        if (!String.prototype.trim) {
+            (function() {
+                // Make sure we trim BOM and NBSP
+                var rtrim = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g;
+                String.prototype.trim = function() {
+                    return this.replace(rtrim, '');
+                };
+            })();
+        }
+
+        [].slice.call( document.querySelectorAll( 'input.input__field' ) ).forEach( function( inputEl ) {
+            // in case the input is already filled..
+            if( inputEl.value.trim() !== '' ) {
+                classie.add( inputEl.parentNode, 'input--filled' );
+            }
+
+            // events:
+            inputEl.addEventListener( 'focus', onInputFocus );
+            inputEl.addEventListener( 'blur', onInputBlur );
+        } );
+
+        function onInputFocus( ev ) {
+            classie.add( ev.target.parentNode, 'input--filled' );
+        }
+
+        function onInputBlur( ev ) {
+            if( ev.target.value.trim() === '' ) {
+                classie.remove( ev.target.parentNode, 'input--filled' );
+            }
+        }
+    })();
+</script>
+
+</html>

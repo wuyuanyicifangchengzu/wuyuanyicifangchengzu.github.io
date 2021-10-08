@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://use.typekit.net/hfy0vzj.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+    <meta charset="UTF-8">
+    <title>this is our memory</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html,body{
+            width: 100%;
+            height: 100%;
+        }
+        .con{
+            font-family: 'Noto Serif CJK SC', 'Noto Serif CJK', 'Source Han Serif SC', ‘ Source Han Serif ’ , source-han-serif-sc, serif;
+            text-align: center;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+            height: 100%;
+        }
+        body{
+            background-image: url("static/img/tour2.jpg");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            -webkit-background-size: 100% 100%;
+        }
+        .pic{
+            width: 1500px;
+            height: 100%;
+            background-color: #ffab00;
+            opacity: 0.5;
+            position: absolute;
+            top:0;
+            left:0;
+        }
+        .text{
+            position: absolute;
+            top:20px;
+            left: 50%;
+            margin-left: -98px;
+        }
+		ul{
+            width: 200px;
+            height: 200px;
+            /*background-color: red;*/
+            position: absolute;
+            bottom: 50px;
+            left: 50%;
+            margin-left:-100px;
+            transform-style: preserve-3d;
+            /*transform: rotateX(-10deg);*/
+            animation: sport 6s linear 0s infinite normal;
+        }
+        ul li{
+            list-style: none;
+            width: 200px;
+            height: 200px;
+            font-size: 60px;
+            text-align: center;
+            line-height: 200px;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        ul li:nth-child(1){
+            background-color: green;
+            transform: rotateY(72deg) translateZ(200px);
+        }
+        ul li:nth-child(2){
+            background-color: blue;
+            transform: rotateY(144deg) translateZ(200px);
+        }
+        ul li:nth-child(3){
+            background-color: yellow;
+            transform: rotateY(216deg) translateZ(200px);
+        }
+        ul li:nth-child(4){
+            background-color: pink;
+            transform: rotateY(288deg) translateZ(200px);
+        }
+        ul li:nth-child(5){
+            background-color: purple;
+            transform: rotateY(360deg) translateZ(200px);
+        }
+        /*ul li:nth-child(6){*/
+        /*    background-color: gold;*/
+        /*    transform: rotateY(360deg) translateZ(200px);*/
+        /*}*/
+        ul li img{
+            width: 200px;
+            height: 200px;
+            border: 5px solid skyblue;
+            box-sizing: border-box;
+        }
+        @keyframes sport {
+            from{
+                transform: rotateX(-10deg) rotateY(0deg);
+            }
+            to{
+                transform: rotateX(-10deg) rotateY(360deg);
+            }
+        }
+		        ul li img{
+            width: 200px;
+            height: 200px;
+            border: 5px solid skyblue;
+            box-sizing: border-box;
+        }
+        ul:hover{
+            animation-play-state: paused;
+        }
+        ul:hover li img{
+            opacity: 0.5;
+        }
+        ul li:hover img{
+            opacity: 1;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <div class="con">
+        <div class="pic"></div>
+        <div class="text">
+            <div>五元一次方程组</div>
+            <br>
+            <div>让我难以忘怀的 不止早餐的粥 <br>
+            让我暖意满满的 不止你的温柔 <br>
+            刚进校园没多久 你牵起我的手 <br>
+            让我感到庆幸的 是你 我的朋友 <br>
+            我们相遇在九月 初见是那一个秋 <br>
+            深秋银杏的守候 见证我们邂逅 <br>
+            在那座陌生的校园里 还好我遇见你 <br>
+            五元 忘不掉的 还是你 <br>
+            和我去国实的前头走一走 我偶我偶 <br>
+            直到天空之境都熄灭了也不停留 <br>
+            因为有你我的朋友 因为是你陪着我走 <br>
+            走到遥远的几年后 回忆大学时的相守</div>
+        </div>
+        <ul>
+			<li id="ele1"><img src="static/img/hanjia.jpg" alt=""></li>
+			<li id="ele2"><img src="static/img/movie4.jpg" alt=""></li>
+			<li id="ele3"><img src="static/img/play1.jpg" alt=""></li>
+			<li id="ele4"><img src="static/img/tour1.jpg" alt=""></li>
+			<li id="ele5"><img src="static/img/youwan1.jpg" alt=""></li>
+        </ul>
+    </div>
+    <script>
+        document.getElementById('ele1').onclick=function () {
+            window.location.href='hanjia.html'
+        }
+        document.getElementById('ele2').onclick=function () {
+            window.location.href='movie.html'
+        }
+        document.getElementById('ele3').onclick=function () {
+            window.location.href='play.html'
+        }
+        document.getElementById('ele4').onclick=function () {
+            window.location.href='tour.html'
+        }
+        document.getElementById('ele5').onclick=function () {
+            window.location.href='youwan.html'
+        }
+    </script>
+</body>
+</html>
